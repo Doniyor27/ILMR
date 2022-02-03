@@ -284,9 +284,9 @@ const Footer = () => {
         </div>
         <div className="footer__underline"></div>
         <div className="footer__bottom">
-          <div className="footer__bottom-logo">
-            <img src={Logo} alt="logo" />
-          </div>
+          <a href='#' className="footer__bottom-logo">
+            <img src={Logo} alt="logo" className="footer-logo"/>
+          </a>
           <div className="footer__bottom-socials">
             {socials.map(({ id, url, icon }) => (
               <a href={url} className="social" key={id}>
@@ -295,8 +295,8 @@ const Footer = () => {
             ))}
           </div>
           <div className="footer__bottom-oks">
-            <a href="#">
-              <img src={oks} alt="Oks Technologies" />
+            <a href="https://oks.uz/" target="_blank" className="oks-logo">
+              <img src={oks} alt="Oks Technologies"/>
             </a>
           </div>
         </div>
