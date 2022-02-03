@@ -1,7 +1,9 @@
+import Homepage from "./page/home"
+
 function App() {
   return (
     <div className="container">
-    <h1>Hello world</h1>
+      <Homepage/>
     </div>
 
   )
