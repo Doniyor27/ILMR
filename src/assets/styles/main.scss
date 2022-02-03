@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  width: 85%;
+  max-width: 1370px;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 100%;
+  max-width: 144px;
+  height: 100%;
+  max-height: 50px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #1147ab;
+  border: 1px solid #1147ab;
+  background-color: transparent;
+  margin-bottom: 12px;
+  transition: transform 0.2s linear;
+  &:hover {
+    img {
+      transform: translate(5px, 0);
+    }
+  }
+  span {
+    margin: 14px 14px 14px 20px;
+    font-size: 16px;
+  }
+  img {
+    margin-right: 20px;
+    transition: transform 0.2s linear;
+  }
+}

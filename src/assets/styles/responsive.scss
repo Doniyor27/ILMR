@@ -1,0 +1,49 @@
+$xxs: 400px;
+$xs: 567px;
+$sm: 767px;
+$md: 991px;
+$lg: 1199px;
+$xl: 1300px;
+$xxl: 1800px;
+
+@mixin xxs {
+  @media only screen and (max-width: $xxs) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media only screen and (max-width: $xs) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media only screen and (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media only screen and (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media only screen and (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media only screen and (max-width: $xl) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media only screen and (max-width: $xxl) {
+    @content;
+  }
+}
