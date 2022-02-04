@@ -28,31 +28,19 @@
         column-gap: 26px;
         .social {
           transition: all ease 0.3s;
+
           &:hover {
             transform: translateY(-5px);
-            opacity: 0.6;
           }
         }
       }
 
       .footer-logo {
         transition: all ease 0.3s;
-        cursor: pointer;
-
-        &:hover {
-          opacity: 0.6;
-        }
       }
   
       &-oks {
         margin-left: 36px;
-        .oks-logo {
-          transition: all ease 0.3s;
-
-          &:hover {
-            opacity: 0.6;
-          }
-        }
       }
     }
   }
