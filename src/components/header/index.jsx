@@ -8,7 +8,7 @@ const Header = () => {
   const links = [
     {
       id: 1,
-      url: "#",
+      url: "mailto:info@toshkent.uz",
       text: "info@toshkent.uz",
       icon: mail,
     },
@@ -25,6 +25,7 @@ const Header = () => {
       icon: mobile,
     },
   ];
+  
   return (
     <div className="header">
       <div className="container">
