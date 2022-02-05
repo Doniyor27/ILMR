@@ -24,6 +24,7 @@
 			flex-direction: column;
 		}
 	margin: 0 auto;
+	overflow-x: hidden;
 	
 	&__left{
 		width: 50%;
@@ -145,13 +146,18 @@
 
 			.sidebar__eye {
 				margin: 40px 0;
+				cursor: pointer;
 
 				@media (max-width: 991px) {
 					margin: 0 40px;
 				}
+				img:hover {
+					fill: #0ba;
+				}
 			}
 
 			.sidebar__language {
+				cursor: pointer;
 				font-size: 20px;
 				line-height: 23px;
 				color: #fff;
@@ -165,12 +171,17 @@
 				
 			  }
 			  .sidebar__socials {
+				
 				display: grid;
 				justify-items: center;
 				row-gap: 45px;
 				margin-bottom: 104px;
 				.social-link {
 					display: block;
+					&:hover {
+						transition: all .3s ease;
+						transform: scale(1.3);
+					}
 				  &:last-child {
 					margin-bottom: 0;
 				  }
@@ -182,6 +193,7 @@
 			  }
 		
 			  .sidebar__scroll {
+				  cursor: pointer;
 				@media screen and (max-width: 1199px) {
 					display: none;
 				}
@@ -528,8 +540,15 @@
 	text-align: center;
 	display: block;
 	position: relative;
-
 	padding: 21px 78px;
+
+	h4 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 15;
+	}
 
 	@media (max-width: 567px) {
 		max-width: 150px;
