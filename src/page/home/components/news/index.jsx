@@ -48,13 +48,15 @@ export default function News() {
         <div className="news__card">
           {newsImgData.slice(0, 1).map((item, id) => (
             <div className="news__card-overflow" key={id}>
-              <div className="news__card-img">
-                <img src={item.img} alt="" />
-                <div className="news__img-background"></div>
-              </div>
-              <div className="news__card-p bold">
-                <p className="text-p">{item.description}</p>
-                <p>{item.time}</p>
+              <div className="news__card-inner">
+                <div className="news__card-img">
+                  <img src={item.img} alt="" />
+                  <div className="news__img-background"></div>
+                </div>
+                <div className="news__card-p bold">
+                  <p className="text-p">{item.description}</p>
+                  <p>{item.time}</p>
+                </div>
               </div>
             </div>
           ))}
