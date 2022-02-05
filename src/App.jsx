@@ -2,7 +2,7 @@ import Homepage from "./page/home"
 
 function App() {
   return (
-    <div className="container">
+    <div>
       <Homepage/>
     </div>
 
