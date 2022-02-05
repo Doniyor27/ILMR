@@ -1,9 +1,14 @@
 
 .partners {
-	margin-top: 136px;
+	padding-top: 136px;
+	padding-bottom: 78px;
+	background: linear-gradient(0deg, #F4F7F7 0%, rgba(244, 247, 247, 0) 160.5%);
 	&__inner {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
+		@media (max-width: 1299px) {
+			justify-content: center;
+		} 
 
 		@media (max-width: 1300px) {
 			flex-wrap: wrap;
