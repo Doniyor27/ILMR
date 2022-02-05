@@ -6,7 +6,7 @@ const Projects = () => {
     <div className="projects">
       <div className="projects__container container">
         <div className="projects-inner container">
-          <ProjectsCarousel />
+           <ProjectsCarousel />
         </div>
       </div>
     </div>
