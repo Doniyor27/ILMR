@@ -4,6 +4,7 @@ import './style.scss';
 import partners1 from '../../../../assets/images/partner1.png'
 import partners2 from '../../../../assets/images/partner2.png'
 import partners3 from '../../../../assets/images/partner3.png'
+import NavHeader from '../../../../components/newsHeader'
 
 const Partners = () => {
 	const partners = [
@@ -26,6 +27,7 @@ const Partners = () => {
 	return (
 		<div className="partners">
 			<div className="container">
+			<NavHeader name='Hamkorlar'/>
 				<div className="partners__inner">
 					{partners.map(({ id, img, text }) => (
 						<div className='partner' key={id}>
