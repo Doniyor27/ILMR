@@ -11,15 +11,15 @@ import Partners from "./components/partners";
 const Home = () => {
   return (
     <div>
-      {/* <Hero/>
-        <News />
-        <Laboratory name="Laboratory" />
-        <Projects/>
-        <Development/>
-        <Opinion/>
-        <Regions/>
-        <Questions /> */}
-      <Partners />
+      {/* <Hero/> */}
+      <News />
+      <Laboratory name="Laboratory" />
+      <Projects />
+      <Development />
+      <Opinion />
+      <Regions />
+      <Questions />
+      {/* <Partners /> */}
     </div>
   );
 };
