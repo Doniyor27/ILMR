@@ -1,4 +1,5 @@
 import Map from "./map";
+import NavHeader from '../../../../components/newsHeader'
 import Row from "../../../../assets/images/icons/inforow.svg";
 import Image1 from "../../../../assets/images/icons/projects.svg";
 import Image2 from "../../../../assets/images/icons/research.svg";
@@ -8,6 +9,7 @@ import "./style.scss";
 const Regions = () => {
   return (
     <div className="regions_container container">
+    <NavHeader name='Kasbiy malaka va bilimlarni rivojlantirish boʼyicha hududiy kengash'/>
       <div className="regions">
         <div className="regions-map">
           <Map />
