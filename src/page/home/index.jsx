@@ -11,15 +11,15 @@ import Questions from "./components/questions";
 const Home = () => {
   return (
     <div>
-        <Hero/>
-        <News />
-        <Laboratory/>
-        <Projects/>
-        <Development/>
-        <Opinion/>
-        <Regions/>
-        <Questions />
-        {/* <Partners /> */}
+      <Hero/>
+      <News />
+      <Laboratory name="Laboratory" />
+      <Projects />
+      <Development />
+      <Opinion />
+      <Regions />
+      <Questions />
+      {/* <Partners /> */}
     </div>
   );
 };
