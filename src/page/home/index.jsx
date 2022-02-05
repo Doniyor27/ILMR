@@ -13,6 +13,9 @@ const Home = () => {
     <div>
       <Hero/>
       <News />
+
+
+      
       <Laboratory name="Laboratory" />
       <Projects />
       <Development />
