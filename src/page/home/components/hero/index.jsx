@@ -16,8 +16,10 @@ import hero3 from '../../../../assets/images/hero3.jpg'
 import hero4 from '../../../../assets/images/hero4.jpg'
 
 import './style.scss';
+import { useState } from 'react/cjs/react.development';
 
 const Hero = () => {
+	const [toggle, setToggle] = useState(false)
 	const sections = [
 		{
 		  id: 1,
@@ -71,7 +73,7 @@ const Hero = () => {
 	  <div className="hero">
 			  <div className="hero__left ">
 				  <div className="hero__sidebar">
-					  <div className="sidebar__toggle">
+					  <div onClick={() => setToggle(!toggle)} className={`${toggle == true ? 'sidebar__toggle toggle' : 'sidebar__toggle'}`}>
 					  <div id='hamburger'>
 						<span></span>
 						<span></span>
