@@ -19,6 +19,8 @@ const Home = () => {
         <Opinion/>
         <Regions/>
         <Questions />
+
+        
         {/* <Partners /> */}
     </div>
   );
