@@ -6,22 +6,20 @@ import Regions from "./components/regions";
 import News from "./components/news";
 import Laboratory from "./components/laboratory";
 import Questions from "./components/questions";
-// import Partners from "./components/partners";
+import Partners from "./components/partners";
 
 const Home = () => {
   return (
     <div>
-        <Hero/>
-        <News />
-        <Laboratory/>
-        <Projects/>
-        <Development/>
-        <Opinion/>
-        <Regions/>
-        <Questions />
-
-        
-        {/* <Partners /> */}
+      <Hero/>
+      <News />
+      <Laboratory name="Laboratory" />
+      <Projects />
+      <Development />
+      <Opinion />
+      <Regions />
+      <Questions />
+      <Partners />
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import eye from '../../../../assets/images/icons/eye.svg'
 import telegram from '../../../../assets/images/icons/telegramHero.svg'
 import facebook from '../../../../assets/images/icons/facebookHero.svg'
 import instagram from '../../../../assets/images/icons/instagramHero.svg'
@@ -11,13 +10,14 @@ import Arrow from '../../../../assets/images/icons/scroll-arrow.svg'
 import logo from '../../../../assets/images/icons/logo.svg';
 
 import hero1 from '../../../../assets/images/hero1.jpg'
-import hero2 from '../../../../assets/images/hero2.jpg'
-import hero3 from '../../../../assets/images/hero3.jpg'
-import hero4 from '../../../../assets/images/hero4.jpg'
 
 import './style.scss';
+import { useState } from 'react/cjs/react.development';
 
 const Hero = () => {
+	const [toggle, setToggle] = useState(false)
+	const [eyeToggle, setEyeToggle] = useState(false)
+	const [langToggle, setLangToggle] = useState(false)
 	const sections = [
 		{
 		  id: 1,
@@ -71,7 +71,7 @@ const Hero = () => {
 	  <div className="hero">
 			  <div className="hero__left ">
 				  <div className="hero__sidebar">
-					  <div className="sidebar__toggle">
+					  <div onClick={() => setToggle(!toggle)} className={`${toggle? 'sidebar__toggle toggle' : 'sidebar__toggle'}`}>
 					  <div id='hamburger'>
 						<span></span>
 						<span></span>
@@ -79,11 +79,23 @@ const Hero = () => {
 						<span></span>
                 	</div>
 					  </div>
-					  <div className="sidebar__eye">
-						  <img src={eye} alt="eye-icon" />
+					  <div onClick={()=> setEyeToggle(!eyeToggle)}
+					  className='sidebar__eye'>
+					  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/	svg">
+							<path id='eye-outer' d="M1.5 18C1.5 18 7.5 6 18 6C28.5 6 34.5 18 34.5 18C34.5 18 28.5 30 18 30C7.5 30 1.5 18 1.5 18Z" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+							<path id='eye-inner' d="M18 22.5C20.4853 22.5 22.5 20.4853 22.5 18C22.5 15.5147 20.4853 13.5 18 13.5C15.5147 13.5 13.5 15.5147 13.5 18C13.5 20.4853 15.5147 22.5 18 22.5Z" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<div className={`${eyeToggle ? 'eye__options eye__show': 'eye__options'}`}>
+							<div className="eye__option">A+</div>
+							<div className="eye__option">A-</div>
+						</div>
 					  </div>
-					  <div className="sidebar__language">
-						  UZB
+					  <div className="sidebar__language" onClick={() => setLangToggle(!langToggle)} >
+						  <span>UZB</span>
+							<div className={`${langToggle ? 'language__options lang__show': 'language__options'}`}>
+							<div class="language__option">ENG</div>
+							<div class="language__option">RUS</div>
+							</div>
 					  </div>
 					  <div className="sidebar__socials">
 						  {socials.map(({id, icon, url}) => (
@@ -104,6 +116,7 @@ const Hero = () => {
 							<div className="sidebar__scroll-arrow"><img src={Arrow} alt="arrow-icon" /></div>
 					  </div>
 				  </div>
+				  <div className="hero__logo"><img src={logo} alt="logo" /></div>
 				  {sections.slice(0, 1).map(({id, img, title, text}) => (
 					 <div key={id} className="hero__section">
 					 <div className="hero__section-image"><img src={img} alt="hero-image" /></div>
