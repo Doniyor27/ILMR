@@ -20,6 +20,7 @@ const Home = () => {
       <Regions />
       <Questions />
       <Partners />
+      
     </div>
   );
 };
