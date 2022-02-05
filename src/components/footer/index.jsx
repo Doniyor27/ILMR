@@ -166,7 +166,7 @@ const Footer = () => {
           url: "#",
         },
         {
-          id: 12,
+          id: 13,
           text: "Ko’p so’raladigan savollar",
           url: "#",
         },

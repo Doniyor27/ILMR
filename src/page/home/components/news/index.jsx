@@ -47,7 +47,7 @@ export default function News() {
       <div className="news__container-flex">
         <div className="news__card">
           {newsImgData.slice(0, 1).map((item, id) => (
-            <div className="news__card-overflow" key={id}>
+            <div className="news__card-overflow" key={item.id}>
               <div className="news__card-inner">
                 <div className="news__card-img">
                   <img src={item.img} alt="" />
@@ -62,8 +62,8 @@ export default function News() {
           ))}
         </div>
         <div className="news__card">
-          {newsImgData.slice(1, 4).map((item, id) => (
-            <div className="news__card__box" key={id}>
+          {newsImgData.slice(1, 4).map((item) => (
+            <div className="news__card__box" key={item.id}>
               <a href="#" className="bold news__box__a-block">
                 {item.country}
               </a>

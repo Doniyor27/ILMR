@@ -14,12 +14,12 @@ const Partners = () => {
 			text: "O'zbekiston Respublikasi Oliy Majlis qonunchilik palatasi"
 		},
 		{
-			id: 1,
+			id: 2,
 			img: partners2,
 			text: "Ozbekiston Respublikasi Axborot texnalogiyalari va komminukatsiyalarini rivojlantirish vazirligi"
 		},
 		{
-			id: 1,
+			id: 3,
 			img: partners3,
 			text: "O'zbekiston Respublikasi Qonun hujjatlari ma'lumotlari Milliy bazasi"
 		}
