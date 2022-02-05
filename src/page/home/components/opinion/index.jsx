@@ -152,9 +152,9 @@ export default function App() {
                         <p className="opinion__right-content-text">
                             {content1?.length < 250 ? content1 : content1.slice(0,250) + "..."}
                         </p>
-                        <buton className="carousel-more">
+                        <button className="carousel-more">
                             Batafsil
-                        </buton>
+                        </button>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -162,9 +162,9 @@ export default function App() {
                         <p className="opinion__right-content-text">
                             {content2?.length < 250 ? content2 : content2.slice(0,250) + "..."}
                         </p>
-                        <buton className="carousel-more">
+                        <button className="carousel-more">
                             Batafsil
-                        </buton>
+                        </button>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -172,9 +172,9 @@ export default function App() {
                         <p className="opinion__right-content-text">
                             {content3?.length < 250 ? content3 : content3.slice(0,250) + "..."}
                         </p>
-                        <buton className="carousel-more">
+                        <button className="carousel-more">
                             Batafsil
-                        </buton>
+                        </button>
                     </div>
                 </SwiperSlide>
             </Swiper>
