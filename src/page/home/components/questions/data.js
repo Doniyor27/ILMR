@@ -130,7 +130,7 @@ export const questionsData = [
         id: 1,
         title:
           "Ish oʼrinlarida mehnat sharoitlari boʼyicha attestatsiya kim tomonidan oʼtkaziladi",
-        desc: "Mehnatni muhofaza qilish sohasida professional xizmat koʼrsatuvchi tashkilotning bevosita xizmat koʼrsatish jarayonida ishtirok etuvchi xodimlari Oʼzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilangan tartibda beriladigan mehnatni muhofaza qilish sohasida malakaviy sertifikatiga ega boʼlishi kerak. Mehnatni muhofaza qilish sohasida professional xizmat koʼrsatuvchi tashkilot rahbaridan sertifikat talab etilmaydi tashkilot shtatida mehnatni muhofaza qilish mutaxassisining malakaviy ",
+        desc: "Mehnatni muhoasdasdsfaza qilish sohasida professional xizmat koʼrsatuvchi tashkilotning bevosita xizmat koʼrsatish jarayonida ishtirok etuvchi xodimlari Oʼzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilangan tartibda beriladigan mehnatni muhofaza qilish sohasida malakaviy sertifikatiga ega boʼlishi kerak. Mehnatni muhofaza qilish sohasida professional xizmat koʼrsatuvchi tashkilot rahbaridan sertifikat talab etilmaydi tashkilot shtatida mehnatni muhofaza qilish mutaxassisining malakaviy ",
       },
       {
         id: 2,
