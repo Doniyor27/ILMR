@@ -104,6 +104,7 @@ const Hero = () => {
 							<div className="sidebar__scroll-arrow"><img src={Arrow} alt="arrow-icon" /></div>
 					  </div>
 				  </div>
+				  <div className="hero__logo"><img src={logo} alt="logo" /></div>
 				  {sections.slice(0, 1).map(({id, img, title, text}) => (
 					 <div key={id} className="hero__section">
 					 <div className="hero__section-image"><img src={img} alt="hero-image" /></div>
