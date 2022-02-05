@@ -7,6 +7,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    
 
     .newsHeader__title-border {
       height: 2px;
@@ -22,6 +23,8 @@
       width: 100%;
       margin-bottom: 19px;
       padding-right: 10px;
+      max-width: 700px;
+      margin-right: 20px;
     }
 
     .btn {

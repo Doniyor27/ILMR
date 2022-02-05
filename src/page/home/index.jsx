@@ -1,3 +1,5 @@
+import Hero from './components/hero';
+import Development from './components/development';
 import Projects from './components/projects'
 import Opinion from './components/opinion'
 import Regions from './components/regions'
@@ -8,9 +10,11 @@ import Questions from './components/questions'
 const Home = () => {
   return (
     <div>
+        <Hero/>
         <News />
         <Laboratory name="Laboratory" />
         <Projects/>
+        <Development/>
         <Opinion/>
         <Regions/>
         <Questions />
