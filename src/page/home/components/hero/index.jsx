@@ -1,27 +1,17 @@
-import React from 'react';
-
-import eye from '../../../../assets/images/icons/eye.svg'
-import telegram from '../../../../assets/images/icons/telegramHero.svg'
-import facebook from '../../../../assets/images/icons/facebookHero.svg'
-import instagram from '../../../../assets/images/icons/instagramHero.svg'
-import twitter from '../../../../assets/images/icons/twitterHero.svg'
-import Arrow from '../../../../assets/images/icons/scroll-arrow.svg'
-
+import React, { useState } from 'react';
 
 import logo from '../../../../assets/images/icons/logo.svg';
-
 import hero1 from '../../../../assets/images/hero1.jpg'
-import hero2 from '../../../../assets/images/hero2.jpg'
-import hero3 from '../../../../assets/images/hero3.jpg'
-import hero4 from '../../../../assets/images/hero4.jpg'
 
 import './style.scss';
-import { useState } from 'react/cjs/react.development';
+import SidebarBtn from './components/SidebarBtn';
+import SidebarLanguage from './components/SidebarLanguage';
+import SidebarEye from './components/SidebarEye';
+import SidebarSocials from './components/SidebarSocials';
+import SidebarScroll from './components/SidebarScroll';
 
 const Hero = () => {
-	const [toggle, setToggle] = useState(false)
 	const [eyeToggle, setEyeToggle] = useState(false)
-	const [langToggle, setLangToggle] = useState(false)
 	const sections = [
 		{
 		  id: 1,
@@ -49,94 +39,44 @@ const Hero = () => {
 		},
 	  ]
 
-	const socials = [
-		{
-			id: 1,
-			icon: telegram,
-			url: '#'
-		},
-		{
-			id: 2,
-			icon: facebook,
-			url: '#'
-		},
-		{
-			id: 3,
-			icon: instagram,
-			url: '#'
-		},
-		{
-			id: 4,
-			icon: twitter,
-			url: '#'
-		}
-	]
+	
   return (
 	  <div className="hero">
-			  <div className="hero__left ">
-				  <div className="hero__sidebar">
-					  <div onClick={() => setToggle(!toggle)} className={`${toggle? 'sidebar__toggle toggle' : 'sidebar__toggle'}`}>
-					  <div id='hamburger'>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-                	</div>
-					  </div>
-					  <div onClick={()=> setEyeToggle(!eyeToggle)}
-					  className='sidebar__eye'>
-					  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/	svg">
-							<path id='eye-outer' d="M1.5 18C1.5 18 7.5 6 18 6C28.5 6 34.5 18 34.5 18C34.5 18 28.5 30 18 30C7.5 30 1.5 18 1.5 18Z" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-							<path id='eye-inner' d="M18 22.5C20.4853 22.5 22.5 20.4853 22.5 18C22.5 15.5147 20.4853 13.5 18 13.5C15.5147 13.5 13.5 15.5147 13.5 18C13.5 20.4853 15.5147 22.5 18 22.5Z" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-						<div className={`${eyeToggle ? 'eye__options eye__show': 'eye__options'}`}>
-							<div className="eye__option">A+</div>
-							<div className="eye__option">A-</div>
+		  		
+				  <div className="hero-container">
+						
+				  		<div className="hero__sidebar">
+							<SidebarBtn/>
+							<SidebarEye/>
+							<SidebarLanguage/>
+							<SidebarSocials/>
+							<SidebarScroll/>
 						</div>
-					  </div>
-					  <div className="sidebar__language" onClick={() => setLangToggle(!langToggle)} >
-						  <span>UZB</span>
-							<div className={`${langToggle ? 'language__options lang__show': 'language__options'}`}>
-							<div class="language__option">ENG</div>
-							<div class="language__option">RUS</div>
+						
+						<div className="hero__logo"><img src={logo} alt="logo" /></div>
+
+						{sections.slice(0, 1).map(({id, title, text}) => (
+							<div key={id} className="hero__section">
+								<div className="hero__section-content">
+									<div className="hero__section-number">{id}</div>
+									<div className="hero__section-info">
+									<div className="hero__section-title">
+										<div>{title[0]}</div>
+										<span>{title[1]}</span>
+									</div>
+									<div className="hero__section-text">{text}</div>
+									<a className='hero__section-btn' href="#"><h4>Batafsil</h4></a>
+									</div>
+								</div>
 							</div>
-					  </div>
-					  <div className="sidebar__socials">
-						  {socials.map(({id, icon, url}) => (
-							  <div key={id} className="social">
-								  <a className='social-link' href={url}><img src={icon} alt="social-icon" /></a>
-							</div>
-						  ))}
-					  </div>
-					  <div className="sidebar__scroll">
-						<div className="sidebar__scroll-mouse">
-							<div></div>
-						</div>
-						<div className="sidebar__scroll-dots">
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
-							<div className="sidebar__scroll-arrow"><img src={Arrow} alt="arrow-icon" /></div>
-					  </div>
+						))}
+
+						
+
 				  </div>
-				  <div className="hero__logo"><img src={logo} alt="logo" /></div>
-				  {sections.slice(0, 1).map(({id, img, title, text}) => (
-					 <div key={id} className="hero__section">
-					 <div className="hero__section-image"><img src={img} alt="hero-image" /></div>
-					 <div className="hero__section-content">
-						 <div className="hero__section-number">{id}</div>
-						 <div className="hero__section-info">
-						   <div className="hero__section-title">
-							   <div>{title[0]}</div>
-							   <span>{title[1]}</span>
-						   </div>
-						   <div className="hero__section-text">{text}</div>
-						   <a className='hero__section-btn' href="#"><h4>Batafsil</h4></a>
-						 </div>
-					 </div>
-				 </div>
-				  ))}
+			  <div className="hero__left ">
+			  <div className="hero__left-image"><img src={hero1} alt="hero-image" /></div>
+				  
 			  </div>
 			  <div className="hero__right">
 			  {sections.slice(1, 4).map(({id, img, title, text}) => (
