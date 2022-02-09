@@ -43,44 +43,33 @@ export default function News() {
 
   return (
     <div className="news container">
-      <NewsHeader name="Yangiliklar" />
-      <div className="news__container-flex">
-        <div className="news__card">
+      <div className="news__inner">
+        <div className="news__box">
           {newsImgData.slice(0, 1).map((item, id) => (
-            <div className="news__card-overflow" key={id}>
-              <div className="news__card-inner">
-                <div className="news__card-img">
-                  <img src={item.img} alt="" />
-                  <div className="news__img-background"></div>
-                </div>
-                <div className="news__card-p bold">
-                  <p className="text-p">{item.description}</p>
-                  <p>{item.time}</p>
-                </div>
+            <div className="news__box__left" key={id}>
+              <img src={item.img} alt="" />
+              <div className="news__box__left-background"></div>
+              <div className="news__box__left__p">
+                <p>{item.description}</p>
+                <p>{item.time}</p>
               </div>
             </div>
           ))}
         </div>
-        <div className="news__card">
+        <div className="news__box">
           {newsImgData.slice(1, 4).map((item, id) => (
-            <div className="news__card__box" key={id}>
-              <a href="#" className="bold news__box__a-block">
-                {item.country}
-              </a>
-              <div className="news__box-flex">
-                <div className="news__box-flex_order">
-                  <a href="#" className="news__box__a-none bold">
-                    {item.country}
-                  </a>
-                  <p className="bold">
-                    {item.description?.length < 120
-                      ? item.description
-                      : item.description.slice(0, 120) + "..."}
-                  </p>
+            <div className="news__right" key={id}>
+              <div className="news__card__box">
+                <h4>{item.country}</h4>
+                <div className="news__card__inner">
+                  <div className="news__card__inner-text">
+                    <h4>{item.country}</h4>
+                    <p>{item.description}</p>
+                  </div>
+                  <img src={item.img} alt="" />
                 </div>
-                <img src={item.img} alt="" />
+                <p>{item.time}</p>
               </div>
-              <p className="news__card__box-time bold">{item.time}</p>
             </div>
           ))}
         </div>
