@@ -1,6 +1,6 @@
-@import 'variables';
-@import 'base';
-@import 'responsive';
+@import "variables";
+@import "base";
+@import "responsive";
 
 * {
   margin: 0;
@@ -29,26 +29,25 @@ body {
   @media (max-width: 1199px) {
     max-width: 960px;
   }
-  
+
   @media (max-width: 991px) {
     max-width: 720px;
   }
-  
+
   @media (max-width: 767px) {
     max-width: 560px;
   }
-  
+
   @media (max-width: 567px) {
     max-width: 100%;
   }
-  
 }
 
 .btn {
   width: 100%;
-  max-width: 144px;
+
   height: 100%;
-  max-height: 50px;
+
   padding: 5px;
   display: flex;
   align-items: center;

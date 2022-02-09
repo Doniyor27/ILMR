@@ -7,11 +7,12 @@ import News from "./components/news";
 import Laboratory from "./components/laboratory";
 import Questions from "./components/questions";
 import Partners from "./components/partners";
-
+import NewsHeader from "../../components/newsHeader";
 const Home = () => {
   return (
     <div>
-      {/* <Hero/> */}
+      <Hero />
+      <NewsHeader name="Yangiliklar" />
       <News />
       <Laboratory name="Laboratory" />
       <Projects />
@@ -19,7 +20,7 @@ const Home = () => {
       <Opinion />
       <Regions />
       <Questions />
-      {/* <Partners /> */}
+      {/* {/* <Partners /> */}
     </div>
   );
 };
