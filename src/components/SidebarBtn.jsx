@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-
+import React, { useState, useContext } from 'react';
+import './SidebarBtn.scss';
 const SidebarBtn = () => {
 	const [toggle, setToggle] = useState(false);
   return (

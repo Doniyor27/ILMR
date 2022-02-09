@@ -1,0 +1,17 @@
+.sidebar {
+	margin-top: 50px;
+	max-width: 90px;
+	width: 100%;
+	
+	@media(max-width: 567px) {
+		margin-left: auto;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		min-width: 120px;
+	}
+}
+
+
+
+

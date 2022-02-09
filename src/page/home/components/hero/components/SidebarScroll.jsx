@@ -2,6 +2,7 @@ import React from 'react';
 
 import Arrow from '../../../../../assets/images/icons/scroll-arrow.svg'
 
+import './SidebarScroll.scss';
 
 const SidebarScroll = () => {
   return (

@@ -5,6 +5,9 @@ import facebook from '../../../../../assets/images/icons/facebookHero.svg'
 import instagram from '../../../../../assets/images/icons/instagramHero.svg'
 import twitter from '../../../../../assets/images/icons/twitterHero.svg'
 
+import './SidebarSocials.scss';
+
+
 const SidebarSocials = () => {
 
 	const socials = [

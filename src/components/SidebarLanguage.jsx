@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './SidebarLanguage.scss';
 
 const SidebarLanguage = () => {
 	const [langToggle, setLangToggle] = useState(false)

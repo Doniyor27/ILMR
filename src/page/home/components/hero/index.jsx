@@ -4,11 +4,8 @@ import logo from '../../../../assets/images/icons/logo.svg';
 import hero1 from '../../../../assets/images/hero1.jpg'
 
 import './style.scss';
-import SidebarBtn from './components/SidebarBtn';
-import SidebarLanguage from './components/SidebarLanguage';
-import SidebarEye from './components/SidebarEye';
-import SidebarSocials from './components/SidebarSocials';
-import SidebarScroll from './components/SidebarScroll';
+import Sidebar from './components/Sidebar';
+
 
 const Hero = () => {
 	const [eyeToggle, setEyeToggle] = useState(false)
@@ -45,12 +42,8 @@ const Hero = () => {
 		  		
 				  <div className="hero-container">
 						
-				  		<div className="hero__sidebar">
-							<SidebarBtn/>
-							<SidebarEye/>
-							<SidebarLanguage/>
-							<SidebarSocials/>
-							<SidebarScroll/>
+				  		<div className="sidebar">
+							<Sidebar/>
 						</div>
 						
 						<div className="hero__logo"><img src={logo} alt="logo" /></div>

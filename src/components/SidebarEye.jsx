@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './SidebarEye.scss';
 
 const SidebarEye = () => {
 	const [eyeToggle, setEyeToggle] = useState(false);
