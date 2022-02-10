@@ -8,6 +8,7 @@ import NewsAbout from "./page/NewsAbout";
 import LeaderShip from "./page/leaderShip";
 import Books from './page/Books';
 import DevSkills from './page/developmentSkills';
+import Projects from './page/projects';
 
 function App() {
   const { pathname } = useLocation();
@@ -25,6 +26,7 @@ function App() {
         <Route path="/contact" component={LeaderShip} />
         <Route path="/books" component={Books} />
         <Route path="/devskills" component={DevSkills} />
+        <Route path="/projects" component={Projects} />
       </Switch>
       <Footer />
     </>
