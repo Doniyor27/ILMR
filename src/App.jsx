@@ -9,6 +9,7 @@ import LeaderShip from "./page/leaderShip";
 import Books from './page/Books';
 import DevSkills from './page/developmentSkills';
 import Projects from './page/projects';
+import MediatekaOne from "./page/mediatekaOne";
 
 function App() {
   const { pathname } = useLocation();
@@ -29,7 +30,8 @@ function App() {
         <Route path="/projects" component={Projects} />
         <Route exact path="/news" component={NewsPage} />
         <Route exact path="/news/about" component={NewsAbout} />
-        <Route exact path="/contact" component={LeaderShip} />
+        <Route exact path="/leadership" component={LeaderShip} />
+        <Route exact path="/mediatekaOne" component={MediatekaOne} />
       </Switch>
       <Footer />
     </>

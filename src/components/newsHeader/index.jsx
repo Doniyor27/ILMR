@@ -9,7 +9,7 @@ export default function NewsHeader({ name }) {
         <div className="newsHeader__title">
           <span className="newsHeader__title-border"></span>
           <h1 className="bold">{name}</h1>
-          <Link to="/news" className="btn">
+          <Link to="/leadership" className="btn">
             <span>Barchasi</span>
             <img src={RightArrow} alt="" />
           </Link>

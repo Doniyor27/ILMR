@@ -8,9 +8,12 @@ export default function LeaderShip({ item }) {
   return (
     <div className="contact__card">
       <div className="contact__card__box">
-        <div className="contact__card__img">
-          <img src={item.img} alt="" />
+        <div className="contact__card__img__style">
+          <div className="contact__card__img">
+            <img src={item.img} alt="" />
+          </div>
         </div>
+
         <div className="contact__card__info">
           <h3>{item.title}</h3>
           <p>
