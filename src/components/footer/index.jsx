@@ -269,7 +269,7 @@ const Footer = () => {
       <div className="footer__inner container">
         <div className="footer__columns">
           {column.map(item => {
-            const { id, title, texts } = item;
+            const { id, title, texts } = item
             return (
               <div className="column" key={id}>
                 <div className="column__title">{title}</div>

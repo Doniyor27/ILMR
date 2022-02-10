@@ -6,6 +6,8 @@ import Footer from "./components/footer";
 import Home from "./page/home";
 import NewsAbout from "./page/NewsAbout";
 import LeaderShip from "./page/leaderShip";
+import Books from './page/Books';
+
 function App() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -17,9 +19,10 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/news" component={NewsPage} />
-        <Route exact path="/news/about" component={NewsAbout} />
-        <Route exact path="/contact" component={LeaderShip} />
+        <Route path="/news" component={NewsPage} />
+        <Route path="/news/about" component={NewsAbout} />
+        <Route path="/contact" component={LeaderShip} />
+        <Route path="/books" component={Books} />
       </Switch>
       <Footer />
     </>
