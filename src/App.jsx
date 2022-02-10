@@ -7,6 +7,7 @@ import Home from "./page/home";
 import NewsAbout from "./page/NewsAbout";
 import LeaderShip from "./page/leaderShip";
 import Books from './page/Books';
+import DevSkills from './page/developmentSkills';
 
 function App() {
   const { pathname } = useLocation();
@@ -23,6 +24,7 @@ function App() {
         <Route path="/news/about" component={NewsAbout} />
         <Route path="/contact" component={LeaderShip} />
         <Route path="/books" component={Books} />
+        <Route path="/devskills" component={DevSkills} />
       </Switch>
       <Footer />
     </>
