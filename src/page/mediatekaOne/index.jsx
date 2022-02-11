@@ -7,7 +7,9 @@ import MediatekaOneBottom1 from "../../assets/images/mediatekaOneBottom1.png";
 import MediatekaOneBottom2 from "../../assets/images/mediatekaOneBottom2.png";
 import MediatekaOneBottom3 from "../../assets/images/mediatekaOneBottom3.png";
 import MediatekaOneBottom4 from "../../assets/images/mediatekaOneBottom4.png";
+import Hero2 from "../../components/hero2";
 import "./style.scss";
+import { heroData10 } from "../../components/heroData";
 export default function MediatekaOne() {
   const mediatekaOneData = [
     {
@@ -52,13 +54,16 @@ export default function MediatekaOne() {
   const [mediaData, setMediaData] = useState(mediatekaOneData);
 
   return (
-    <div className="mediatekaOne container">
-      <div className="mediatekaOne__top">
-        <MediatekaTop mediaData={mediaData} />
+    <>
+      <Hero2 data={heroData10} index={10} />
+      <div className="mediatekaOne container">
+        <div className="mediatekaOne__top">
+          <MediatekaTop mediaData={mediaData} />
+        </div>
+        <div className="mediatekaOne__bottom">
+          <MediatekaBottom mediaData={mediaData} />
+        </div>
       </div>
-      <div className="mediatekaOne__bottom">
-        <MediatekaBottom mediaData={mediaData} />
-      </div>
-    </div>
+    </>
   );
 }

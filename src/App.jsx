@@ -4,13 +4,14 @@ import NewsPage from "./page/NewsPage/index";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Home from "./page/home";
-import NewsAbout from "./page/NewsAbout";
 import LeaderShip from "./page/leaderShip";
-import Books from './page/Books';
-import DevSkills from './page/developmentSkills';
-import Projects from './page/projects';
+import NewsAbout from "./page/NewsAbout";
+import Books from "./page/Books";
+import DevSkills from "./page/developmentSkills";
+import Projects from "./page/projects";
 import MediatekaOne from "./page/mediatekaOne";
-
+import MediatekaTwo from "./page/mediatekaTwo";
+import Bukletlar from "./page/bukletlar";
 function App() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -22,7 +23,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/news" component={NewsPage} />
+        <Route path="/projects" component={Projects} />
         <Route path="/contact" component={LeaderShip} />
         <Route path="/books" component={Books} />
         <Route path="/devskills" component={DevSkills} />
@@ -31,6 +32,8 @@ function App() {
         <Route path="/news/about" component={NewsAbout} />
         <Route path="/leadership" component={LeaderShip} />
         <Route path="/mediatekaOne" component={MediatekaOne} />
+        <Route path="/mediatekaTwo" component={MediatekaTwo} />
+        <Route path="/bukletlar" component={Bukletlar} />
       </Switch>
       <Footer />
     </>
