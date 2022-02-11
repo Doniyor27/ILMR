@@ -1,11 +1,12 @@
-import React from 'react';
-import './style.scss'
+import NavHeader from '../../../../components/newsHeader'
 
 import grid2 from '../../../../assets/images/grid2.jpg';
 import grid3 from '../../../../assets/images/grid3.jpg';
 import grid5 from '../../../../assets/images/grid5.jpg';
 import grid8 from '../../../../assets/images/grid8.jpg';
 import grid10 from '../../../../assets/images/grid10.jpg';
+
+import './style.scss'
 
 const development = () => {
 	const data = [
@@ -22,7 +23,8 @@ const development = () => {
 	]
 
   return (
-	  <div className='grid '>
+	  <div className='grid container'>
+	  	<NavHeader name='Malaka oshirish'/>
 			<div className="grid__inner">
 				{data.map(({id, img, content}) => (
 					<a href='#' key={id} className="grid__item">

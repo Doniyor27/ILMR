@@ -40,22 +40,22 @@ const Footer = () => {
         },
         {
           id: 6,
-          text: "Kasbiy malaka va bilimlarni rivojlantirish bo'yicha kengash",
+          text: "Kasbiy malaka va bilimlarni rivojlantirish bo’yicha kengash",
           url: "#",
         },
         {
           id: 7,
-          text: "Kasbiy malaka va bilimlarni rivojlantirish bo'yicha hududiy kengashlar",
+          text: "Kasbiy malaka va bilimlarni rivojlantirish bo’yicha hududiy kengashlar",
           url: "#",
         },
         {
           id: 8,
-          text: "Kasbiy malaka va bilimlarni rivojlantirish bo'yicha tarmoq kengashlari",
+          text: "Kasbiy malaka va bilimlarni rivojlantirish bo’yicha tarmoq kengashlari",
           url: "#",
         },
         {
           id: 9,
-          text: "Mehnatni me'yorlash markazi",
+          text: "Mehnatni me’yorlash markazi",
           url: "#",
         },
         {
@@ -76,12 +76,12 @@ const Footer = () => {
         },
         {
           id: 2,
-          text: "Uy xo'jaliklarini bandlik masalalari bo'yicha organish va boshqa dala tadqiqotlarini tashkil qilish guruhi",
+          text: "Uy xoʼjaliklarini bandlik masalalari boʼyicha oʼrganish va boshqa dala tadqiqotlarini tashkil qilish guruhi",
           url: "#",
         },
         {
           id: 3,
-          text: "Mehnatni muhofaza qilish bo'yicha markaziy laboratoriya",
+          text: "Mehnatni muhofaza qilish boʼyicha markaziy laboratoriya",
           url: "#",
         },
         {
@@ -112,7 +112,7 @@ const Footer = () => {
         },
         {
           id: 2,
-          text: "O'zbekiston yangiliklari",
+          text: "O’zbekiston yangiliklari",
           url: "#",
         },
         {
@@ -157,7 +157,7 @@ const Footer = () => {
         },
         {
           id: 11,
-          text: "E'lonlar",
+          text: "E’lonlar",
           url: "#",
         },
         {
@@ -166,8 +166,8 @@ const Footer = () => {
           url: "#",
         },
         {
-          id: 12,
-          text: "Ko'p so'raladigan savollar",
+          id: 13,
+          text: "Ko’p so’raladigan savollar",
           url: "#",
         },
       ],
@@ -209,12 +209,12 @@ const Footer = () => {
         },
         {
           id: 2,
-          text: "Uslubiy qo'llanmalar",
+          text: "Uslubiy qo’llanmalar",
           url: "#",
         },
         {
           id: 3,
-          text: "O'quv-metodik adabiyotlar",
+          text: "O’quv-metodik adabiyotlar",
           url: "#",
         },
         {
@@ -231,7 +231,7 @@ const Footer = () => {
     },
     {
       id: 6,
-      title: "Bog'lanish",
+      title: "Bog’lanish",
       texts: [
         {
           id: 1,
@@ -269,7 +269,7 @@ const Footer = () => {
       <div className="footer__inner container">
         <div className="footer__columns">
           {column.map(item => {
-            const { id, title, texts } = item;
+            const { id, title, texts } = item
             return (
               <div className="column" key={id}>
                 <div className="column__title">{title}</div>
