@@ -9,7 +9,7 @@ import { heroData10, heroData11, heroData12, heroData13, heroData14, heroData15,
 const Homepage = () => {
   return (
 	  <div>
-		  <Hero2 data={heroData2} index={2}/>
+		  {/* <Hero2 data={heroData2} index={2}/> */}
 		  {/* <Hero2 data={heroData3} index={1}/> */}
 		  {/* <Hero2 data={heroData3} index={2}/> */}
 		  {/* <Hero2 data={heroData5} index={1}/> */}

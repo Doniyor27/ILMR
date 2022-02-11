@@ -1,9 +1,11 @@
+import Connection from "./page/connection"
 import Homepage from "./page/home"
 
 function App() {
   return (
     <div>
-      <Homepage/>
+      {/* <Homepage/> */}
+      <Connection/>
     </div>
 
   )
