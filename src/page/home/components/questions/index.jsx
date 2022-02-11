@@ -22,7 +22,7 @@ export default function Questions() {
     setShow(id);
   };
 
-  const handleActive = () => {};
+  // const handleActive = () => {};
 
   return (
     <div className="questions container">
@@ -45,18 +45,18 @@ export default function Questions() {
         </div>
 
         <div className="questions__box__card">
-          {idItems.map((item, id) => (
-            <div className="questions__box__card__accardion" key={id}>
+          {idItems.map((item) => (
+            <div className="questions__box__card__accardion" key={item.id}>
               <div
                 className="questions__box__card__accardion__info"
-                onClick={() => toggle(id)}
+                onClick={() => toggle(item.id)}
               >
                 <p>{item.title}</p>
-                <span>{show === id ? "-" : "+"}</span>
+                <span>{show === item.id ? "-" : "+"}</span>
               </div>
               <div
                 className={`questions__box__card__accardion__text ${
-                  show === id ? "show" : ""
+                  show === item.id ? "show" : ""
                 }`}
               >
                 <div className="questions__box__card__accardion__text__info">

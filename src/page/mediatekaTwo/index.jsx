@@ -67,7 +67,6 @@ export default function MediatekaTwo() {
         {mediatekaTwoData.map((item, id) => (
           <div className="mediatekaTwo__card" key={id}>
             <img src={item.img} alt="" />
-
             <p>{item.title}</p>
           </div>
         ))}

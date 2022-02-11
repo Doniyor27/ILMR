@@ -3,7 +3,7 @@ import LaboratoryImg1 from "../../../../assets/images/laboratory_left_img1.png";
 import LaboratoryImgRight1 from "../../../../assets/images/laboratory_right_img1.png";
 import LaboratoryImgRight2 from "../../../../assets/images/laboratory_right_img2.png";
 import "./style.scss";
-export default function Laboratory({ name }) {
+export default function Laboratory() {
   const laboratoryData = [
     {
       id: 1,
@@ -27,7 +27,7 @@ export default function Laboratory({ name }) {
       <div className="laboratory__inner">
         <div className="laboratory__content">
           <div className="laboratory__header">
-            <h1>{name}</h1>
+            <h1>Laboratory</h1>
             <span></span>
           </div>
           <div className="laboratory__card__box-p">

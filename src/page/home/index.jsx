@@ -7,20 +7,20 @@ import News from "./components/news";
 import Laboratory from "./components/laboratory";
 import Questions from "./components/questions";
 import Partners from "./components/partners";
-import NewsHeader from "../../components/newsHeader";
+
+
 const Home = () => {
   return (
     <div>
-      <Hero />
-      <NewsHeader name="Yangiliklar" />
+      <Hero/>
       <News />
-      <Laboratory name="Laboratory" />
+      <Laboratory />
       <Projects />
       <Development />
       <Opinion />
       <Regions />
       <Questions />
-      {/* {/* <Partners /> */}
+      <Partners />
     </div>
   );
 };

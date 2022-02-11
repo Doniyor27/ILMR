@@ -5,7 +5,10 @@ import ContactImg3 from "../../assets/images/contactImg3.png";
 import ContactImg4 from "../../assets/images/contactImg4.png";
 import ContactImg5 from "../../assets/images/contactImg5.png";
 import LeaderShip from "./LeadirShip";
+import Hero2 from "../../components/hero2";
+
 import "./style.scss";
+import { heroData3 } from "../../components/heroData";
 export default function LeaderShipp() {
   const contactData = [
     {
@@ -96,12 +99,15 @@ export default function LeaderShipp() {
   ];
 
   return (
-    <div className="contact container">
-      <div className="contact__inner">
-        {contactData.map((item, id) => (
-          <LeaderShip item={item} key={id} />
-        ))}
+    <>
+      <Hero2 data={heroData3} index={2} />
+      <div className="contact container">
+        <div className="contact__inner">
+          {contactData.map((item, id) => (
+            <LeaderShip item={item} key={id} />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
