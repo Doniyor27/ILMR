@@ -7,6 +7,8 @@ import Home from "./page/home";
 import NewsAbout from "./page/NewsAbout";
 import LeaderShip from "./page/leaderShip";
 import MediatekaOne from "./page/mediatekaOne";
+import MediatekaTwo from "./page/mediatekaTwo";
+import Bukletlar from "./page/bukletlar";
 function App() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -22,6 +24,8 @@ function App() {
         <Route exact path="/news/about" component={NewsAbout} />
         <Route exact path="/leadership" component={LeaderShip} />
         <Route exact path="/mediatekaOne" component={MediatekaOne} />
+        <Route exact path="/mediatekaTwo" component={MediatekaTwo} />
+        <Route exact path="/bukletlar" component={Bukletlar} />
       </Switch>
       <Footer />
     </>
