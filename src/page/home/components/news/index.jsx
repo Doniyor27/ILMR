@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.scss";
-import NewsHeader from "../../../../components/newsHeader";
 import NewsImg from "../../../../assets/images/news_img1.png";
 import NewsImgRight1 from "../../../../assets/images/news_img_right1.png";
 import NewsImgRight2 from "../../../../assets/images/news_img_right2.png";

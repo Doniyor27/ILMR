@@ -23,15 +23,14 @@ function App() {
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/news" component={NewsPage} />
-                <Route path="/news/about" component={NewsAbout} />
                 <Route path="/contact" component={LeaderShip} />
                 <Route path="/books" component={Books} />
                 <Route path="/devskills" component={DevSkills} />
                 <Route path="/projects" component={Projects} />
-                <Route exact path="/news" component={NewsPage} />
-                <Route exact path="/news/about" component={NewsAbout} />
-                <Route exact path="/leadership" component={LeaderShip} />
-                <Route exact path="/mediatekaOne" component={MediatekaOne} />
+                <Route path="/news" component={NewsPage} />
+                <Route path="/news/about" component={NewsAbout} />
+                <Route path="/leadership" component={LeaderShip} />
+                <Route path="/mediatekaOne" component={MediatekaOne} />
             </Switch>
             <Footer />
         </>
