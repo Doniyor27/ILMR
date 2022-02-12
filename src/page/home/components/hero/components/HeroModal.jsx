@@ -8,7 +8,8 @@ import Sidebar from "./Sidebar";
 import "./Sidebar.scss";
 
 const HeroModal = () => {
-    const [toggle, setToggle] = useState(false);
+    var [toggle, setToggle] = useState(true);
+
     const columns = [
         {
             id: 1,
@@ -246,7 +247,7 @@ const HeroModal = () => {
     return (
         <div className={`modal container ${toggle ? "visible" : ""}`}>
             <div className="modal__sidebar">
-                <SidebarBtn />
+                <SidebarBtn toggle={toggle} setToggle={setToggle} />
                 <SidebarEye />
                 <SidebarLanguage />
                 <SidebarSocials />
