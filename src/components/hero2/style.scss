@@ -102,6 +102,9 @@
     @media (max-width: 991px) {
         max-width: 110px;
     }
+    @media (max-width: 567px) {
+        padding-left: 15px;
+    }
 }
 
 .hero2__title {
@@ -131,6 +134,7 @@
         font-size: 24px;
         display: block;
         margin: 20px 0 185px;
+        padding-left: 15px;
     }
 }
 
