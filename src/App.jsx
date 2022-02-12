@@ -10,8 +10,10 @@ import Books from "./page/Books";
 import DevSkills from "./page/developmentSkills";
 import Projects from "./page/projects";
 import MediatekaOne from "./page/mediatekaOne";
-import MediatekaTwo from "./page/mediatekaTwo";
 import Bukletlar from "./page/bukletlar";
+import Regulation from "./page/regulation";
+import Structure from "./page/structure";
+
 function App() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -27,13 +29,13 @@ function App() {
         <Route path="/contact" component={LeaderShip} />
         <Route path="/books" component={Books} />
         <Route path="/devskills" component={DevSkills} />
-        <Route path="/projects" component={Projects} />
         <Route path="/news" component={NewsPage} />
         <Route path="/news/about" component={NewsAbout} />
         <Route path="/leadership" component={LeaderShip} />
         <Route path="/mediatekaOne" component={MediatekaOne} />
-        <Route path="/mediatekaTwo" component={MediatekaTwo} />
         <Route path="/bukletlar" component={Bukletlar} />
+        <Route path="/regulation" component={Regulation} />
+        <Route path="/structure" component={Structure} />
       </Switch>
       <Footer />
     </>

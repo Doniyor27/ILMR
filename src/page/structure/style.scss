@@ -1,0 +1,42 @@
+.structure {
+  margin: 100px auto;
+  &__inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .structure__file {
+      gap: 22px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      a:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .book-card {
+    padding: 26px 26px 15px 26px;
+    &__text {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .structure__inner {
+    .structure__file {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .structure__inner {
+    .structure__file {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

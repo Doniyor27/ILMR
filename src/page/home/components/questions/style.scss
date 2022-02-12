@@ -109,7 +109,8 @@
                 color: #0e44a8;
                 bottom: 0;
                 position: absolute;
-                left: 42%;
+                left: 50%;
+                transform: translate(-50%, 0);
                 opacity: 1;
                 font-weight: bold;
               }
@@ -124,7 +125,7 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-top: 20px;
+
     &__info {
       display: flex;
       justify-content: end;
@@ -154,6 +155,9 @@
     &__box {
       grid-template-columns: 1fr;
 
+      .questions__modal__false {
+        display: none;
+      }
       &__card {
         &:nth-child(1) {
           margin-right: 0;
@@ -165,6 +169,7 @@
 
         &__info__p p {
           padding: 19px 37px 25px 5px;
+          font-size: 17px;
         }
       }
     }
@@ -189,6 +194,13 @@
     }
   }
 }
+@media (max-width: 767px) {
+  .questions__box__card__info__p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
 @media (max-width: 500px) {
   .questions {
     &__background {
@@ -200,10 +212,10 @@
       &__card {
         &__info {
           &__p {
-            font-size: 12px;
-            line-height: 22px;
             p {
               padding: 19px 10px 19px 10px;
+              font-size: 12px !important;
+              line-height: 22px;
             }
           }
         }
@@ -211,7 +223,7 @@
         &__accardion {
           &__info {
             p {
-              font-size: 14px;
+              font-size: 12px;
               padding-right: 6px;
               line-height: 1.4;
             }
@@ -220,14 +232,13 @@
           &__text {
             &__info {
               p {
-                font-size: 13px;
+                font-size: 12px;
                 line-height: 20px;
               }
 
               &__opacity {
                 a {
-                  left: 32%;
-                  font-size: 14px;
+                  font-size: 13px;
                 }
               }
             }

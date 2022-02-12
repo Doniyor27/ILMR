@@ -71,11 +71,7 @@ export default function NewsPage() {
 
   return (
     <>
-<<<<<<< HEAD
     <Hero data={heroData2} index={2}/>
-=======
-      <Hero2 data={heroData2} index={2} />
->>>>>>> dc6b5191a9778c262dee0dcbd1fce8aca799ebc4
       <News />
       <div className="newsPage container">
         <div className="newsPage__inner">
