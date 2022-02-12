@@ -14,13 +14,14 @@ import Bukletlar from "./page/bukletlar";
 import Regulation from "./page/regulation";
 import Structure from "./page/structure";
 import Vacancy from "./page/vacancy";
-// import Contact from './page/'
+import PhotoGallery from "./page/photoGallery";
+import Connection from './page/connection'
 
 function App() {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
   return (
     <>
@@ -28,7 +29,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={LeaderShip} />
+        <Route path="/connection" component={Connection} />
         <Route path="/books" component={Books} />
         <Route path="/devskills" component={DevSkills} />
         <Route path="/news" component={NewsPage} />
@@ -39,6 +40,7 @@ function App() {
         <Route path="/regulation" component={Regulation} />
         <Route path="/structure" component={Structure} />
         <Route path="/vacancy" component={Vacancy} />
+        <Route path="/photoGallery" component={PhotoGallery} />
       </Switch>
       <Footer />
     </>
