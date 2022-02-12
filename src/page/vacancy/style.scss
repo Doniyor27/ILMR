@@ -1,0 +1,40 @@
+.vacancy {
+    &__inner {
+        margin-top: 50px !important;
+        margin-bottom: 114px !important;
+    }
+}
+
+.vacancy-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 22px;
+    row-gap: 22px;
+    width: 100%;
+
+    @media (max-width: 991px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 375px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.vacancy-card {
+    overflow: hidden;
+    
+    &:hover &__img {
+        transform: scale(1.1)
+    }
+    
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        transition: all ease 0.3s;
+    }
+}

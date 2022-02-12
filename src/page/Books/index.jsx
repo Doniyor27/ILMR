@@ -1,5 +1,8 @@
 import BookCard from './components/bookCard'
 import Button from '../../components/button'
+import Hero from '../../components/hero2'
+import {heroData5} from '../../components/heroData'
+
 import './style.scss'
 
 const Books = () => {
@@ -54,8 +57,9 @@ const Books = () => {
         }
     ]
   return (
-    <div className="books container">
-      <div className="books__inner">
+    <div className="books">
+    <Hero data={heroData5} index={1}/>
+      <div className="books__inner container">
          { data.map((item,id) => (
           <BookCard text={item.text} type={item.type} url={item.url} key={id} />
          ))}

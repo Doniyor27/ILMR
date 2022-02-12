@@ -199,7 +199,7 @@ export const heroData7 = {
 	  texts: [
 		{
 		  id: 1,
-		  text: "Faoliyat",
+		  text: "Mavjud vakansiyalar",
 		  url: "#",
 		},
 		{

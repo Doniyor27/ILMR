@@ -1,5 +1,9 @@
 .devskills {
-    margin-top: 44px !important;
+
+    .devskills-inner {
+        margin-top: 44px;
+    }
+
     &__top {
         max-width: 66%;
         margin: 0 auto;
@@ -72,4 +76,3 @@
         }
     }
 }
-

@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import News from "../home/components/news";
 import NewsPageImg1 from "../../assets/images/newsPageImg1.png";
 import NewsPageImg2 from "../../assets/images/newsPageImg2.png";
 import NewsPageImg3 from "../../assets/images/newsPageImg3.png";
 import RightArrow from "../../assets/images/icons/right-arrow.svg";
-import { Link } from "react-router-dom";
+import Hero from '../../components/hero2'
+import {heroData2} from '../../components/heroData'
 import "./style.scss";
-import Hero2 from "../../components/hero2";
-import { heroData2 } from "../../components/heroData";
+
 export default function NewsPage() {
   const newsPageData = [
     {
@@ -70,7 +71,7 @@ export default function NewsPage() {
 
   return (
     <>
-      <Hero2 data={heroData2} index={2} />
+    <Hero data={heroData2} index={2}/>
       <News />
       <div className="newsPage container">
         <div className="newsPage__inner">

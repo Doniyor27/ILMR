@@ -1,4 +1,6 @@
 import LeaderCard from './components'
+import Hero from '../../components/hero2'
+import {heroData10} from '../../components/heroData'
 import './style.scss'
 
 const DevSkills = () => {
@@ -54,21 +56,24 @@ const DevSkills = () => {
     }
 
     return (
-        <div className="devskills container">
-            <div className="devskills__top">
-                <h2 className="devskills__title">{data.title}</h2>
-                <p className="devskills__subtitle">{data.subtitle}</p>
-                <p className="devskills__text">{data.p}</p>
-                <p className="devskills__text">{data.p2}</p>
-                <p className="devskills__text">{data.p3}</p>
-            </div>
+        <div className="devskills">
+            <Hero data={heroData10} index={1}/>
+            <div className="devskills-inner container">
+                <div className="devskills__top">
+                    <h2 className="devskills__title">{data.title}</h2>
+                    <p className="devskills__subtitle">{data.subtitle}</p>
+                    <p className="devskills__text">{data.p}</p>
+                    <p className="devskills__text">{data.p2}</p>
+                    <p className="devskills__text">{data.p3}</p>
+                </div>
 
-            <div className="devskills__leaders">
-                {
-                    data.leaders.map((item, key) => (
-                        <LeaderCard key={key} url={item.img} fullname={item.fullname} position={item.position}/>
-                    ))
-                }
+                <div className="devskills__leaders">
+                    {
+                        data.leaders.map((item, key) => (
+                            <LeaderCard key={key} url={item.img} fullname={item.fullname} position={item.position}/>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     )

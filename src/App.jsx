@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Route, Switch, useLocation } from "react-router-dom";
-import NewsPage from "./page/NewsPage/index";
+import NewsPage from "./page/NewsPage";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Home from "./page/home";
@@ -13,27 +13,34 @@ import MediatekaOne from "./page/mediatekaOne";
 import Bukletlar from "./page/bukletlar";
 import Regulation from "./page/regulation";
 import Structure from "./page/structure";
+import Vacancy from "./page/vacancy";
+import PhotoGallery from "./page/photoGallery";
+import Connection from './page/connection'
+
 function App() {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
   return (
     <>
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/books" component={Books} />
-        <Route exact path="/devskills" component={DevSkills} />
-        <Route exact path="/projects" component={Projects} />
-        <Route exact path="/news" component={NewsPage} />
-        <Route exact path="/news/about" component={NewsAbout} />
-        <Route exact path="/leadership" component={LeaderShip} />
-        <Route exact path="/mediatekaOne" component={MediatekaOne} />
-        <Route exact path="/bukletlar" component={Bukletlar} />
-        <Route exact path="/regulation" component={Regulation} />
-        <Route exact path="/structure" component={Structure} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/connection" component={Connection} />
+        <Route path="/books" component={Books} />
+        <Route path="/devskills" component={DevSkills} />
+        <Route path="/news" component={NewsPage} />
+        <Route path="/about" component={NewsAbout} />
+        <Route path="/leadership" component={LeaderShip} />
+        <Route path="/mediatekaOne" component={MediatekaOne} />
+        <Route path="/bukletlar" component={Bukletlar} />
+        <Route path="/regulation" component={Regulation} />
+        <Route path="/structure" component={Structure} />
+        <Route path="/vacancy" component={Vacancy} />
+        <Route path="/photoGallery" component={PhotoGallery} />
       </Switch>
       <Footer />
     </>

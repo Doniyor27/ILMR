@@ -1,6 +1,7 @@
+import Hero from '../../components/hero2'
+import {heroData12} from '../../components/heroData'
 import MediatekaVideo from "../../components/mediatekaVideo/mediatekaVideo";
 import LeaderCard from "../developmentSkills/components";
-import MediatekaBottom from "../mediatekaOne/MediatekaBottom";
 import ProjectPhotoRight1 from "../../assets/images/mediatekaOneBottom1.png";
 import ProjectPhotoRight2 from "../../assets/images/mediatekaOneBottom2.png";
 import ProjectPhotoRight3 from "../../assets/images/mediatekaOneBottom3.png";
@@ -66,35 +67,35 @@ const Projects = () => {
   ];
 
   return (
-    <div className="project-goal container">
-      <div className="projects__leaders">
-        {leaders.map((item, key) => (
-          <LeaderCard
-            key={key}
-            url={item.img}
-            fullname={item.fullname}
-            position={item.position}
-          />
-        ))}
-      </div>
+    <div className="project-goal">
+        <Hero data={heroData12} index={2}/>
+        <div className="project-goal__inner container">
+            <div className="projects__leaders">
+                {
+                    leaders.map((item, key) => (
+                        <LeaderCard key={key} url={item.img} fullname={item.fullname} position={item.position}/>
+                    ))
+                }
+            </div>
 
-      <div className="project-goal__bottom">
-        <div className="goal">
-          <h2 className="goal__title">{goal.title}</h2>
-          <p className="goal__text">{goal.p}</p>
-          <p className="goal__text">{goal.p2}</p>
-          <p className="goal__text">{goal.p3}</p>
-          <p className="goal__text">{goal.p4}</p>
-          <p className="goal__text">{goal.p5}</p>
-          <p className="goal__text">{goal.p6}</p>
+            <div className="project-goal__bottom">
+                <div className="goal">
+                    <h2 className="goal__title">{goal.title}</h2>
+                    <p className="goal__text">{goal.p}</p>
+                    <p className="goal__text">{goal.p2}</p>
+                    <p className="goal__text">{goal.p3}</p>
+                    <p className="goal__text">{goal.p4}</p>
+                    <p className="goal__text">{goal.p5}</p>
+                    <p className="goal__text">{goal.p6}</p>
+                </div>
+                <div className="projects__news">
+                  <h2>Yangiliklar</h2>
+                    {projectCard.map((item, id) => (
+                      <MediatekaVideo item={item} key={id} />
+                    ))}
+                </div>
+            </div>
         </div>
-        <div className="projects__news">
-          <h2>Yangiliklar</h2>
-          {projectCard.map((item, id) => (
-            <MediatekaVideo item={item} key={id} />
-          ))}
-        </div>
-      </div>
     </div>
   );
 };
