@@ -10,7 +10,6 @@ export default function MediatekaBottom({ mediaData }) {
             <div className="mediatekaBottom__img__info">
               <img src={item.img} alt="" />
             </div>
-
             <div className="mediatekaBottom__play">
               <img src={MediatekaOneTopPlay} alt="" />
             </div>

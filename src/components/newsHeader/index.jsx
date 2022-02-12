@@ -4,7 +4,7 @@ import "./style.scss";
 import { Link } from "react-router-dom";
 export default function NewsHeader({ name }) {
   return (
-    <div className="container">
+    <div>
       <div className="newsHeader">
         <div className="newsHeader__title">
           <span className="newsHeader__title-border"></span>

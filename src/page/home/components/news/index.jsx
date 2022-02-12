@@ -5,6 +5,7 @@ import NewsImg from "../../../../assets/images/news_img1.png";
 import NewsImgRight1 from "../../../../assets/images/news_img_right1.png";
 import NewsImgRight2 from "../../../../assets/images/news_img_right2.png";
 import NewsImgRight3 from "../../../../assets/images/news_img_right3.png";
+import NewsHeader from "../../../../components/newsHeader";
 
 export default function News() {
   const newsImgData = [
@@ -43,6 +44,7 @@ export default function News() {
 
   return (
     <div className="news container">
+      <NewsHeader name="Yangiliklar" />
       <div className="news__inner">
         <div className="news__box">
           {newsImgData.slice(0, 1).map((item, id) => (

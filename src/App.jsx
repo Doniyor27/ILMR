@@ -10,8 +10,9 @@ import Books from "./page/Books";
 import DevSkills from "./page/developmentSkills";
 import Projects from "./page/projects";
 import MediatekaOne from "./page/mediatekaOne";
-import MediatekaTwo from "./page/mediatekaTwo";
 import Bukletlar from "./page/bukletlar";
+import Regulation from "./page/regulation";
+import Structure from "./page/structure";
 function App() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -23,7 +24,6 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/contact" component={LeaderShip} />
         <Route exact path="/books" component={Books} />
         <Route exact path="/devskills" component={DevSkills} />
         <Route exact path="/projects" component={Projects} />
@@ -31,8 +31,9 @@ function App() {
         <Route exact path="/news/about" component={NewsAbout} />
         <Route exact path="/leadership" component={LeaderShip} />
         <Route exact path="/mediatekaOne" component={MediatekaOne} />
-        <Route exact path="/mediatekaTwo" component={MediatekaTwo} />
         <Route exact path="/bukletlar" component={Bukletlar} />
+        <Route exact path="/regulation" component={Regulation} />
+        <Route exact path="/structure" component={Structure} />
       </Switch>
       <Footer />
     </>

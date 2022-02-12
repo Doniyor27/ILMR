@@ -109,6 +109,7 @@
               .news__card__inner-text {
                 p {
                   color: #1147ab;
+                  transition: all 0.3s linear;
                 }
               }
             }
@@ -139,6 +140,7 @@
             line-height: 26px;
             font-weight: 600;
             font-style: normal;
+            transition: all 0.3s linear;
           }
         }
       }
