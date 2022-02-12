@@ -31,7 +31,7 @@ export default function NewsAbout() {
         <div className="newsAbout__inner">
           <div className="newsAbout__left">
             <div dangerouslySetInnerHTML={{ __html: content }} />
-            <h1>
+            <h1 className="after">
               Murodullo <br /> Xolmuxamedov
             </h1>
           </div>

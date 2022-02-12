@@ -155,7 +155,8 @@
               a {
                 position: absolute;
                 bottom: 0;
-                left: 45%;
+                left: 50%;
+                transform: translate(-50%, 0);
                 font-style: normal;
                 font-weight: 600;
                 font-size: 18px;
@@ -324,14 +325,6 @@
 
                 span {
                   right: 35px !important;
-                }
-              }
-            }
-
-            .contact__right__accardion {
-              .contact__accardion__opacity {
-                a {
-                  left: 40% !important;
                 }
               }
             }
