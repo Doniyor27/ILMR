@@ -55,13 +55,17 @@ const Photos = () => {
     ];
 
     return (
-        <div className="photos container">
-            {photoData.map(({ id, img, text }) => (
-                <div className="photos__item" key={id}>
-                    <img src={img} alt="photo" />
-                    <p>{text}</p>
+        <div className="photos">
+            <div className="container">
+                <div className="photos__inner">
+                    {photoData.map(({ id, img, text }) => (
+                        <div className="photos__item" key={id}>
+                            <img src={img} alt="photo" />
+                            <p className="photos__item-text">{text}</p>
+                        </div>
+                    ))}
                 </div>
-            ))}
+            </div>
         </div>
     );
 };
