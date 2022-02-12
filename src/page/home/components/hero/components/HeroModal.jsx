@@ -8,7 +8,7 @@ import Sidebar from "./Sidebar";
 import "./Sidebar.scss";
 
 const HeroModal = () => {
-    var [toggle, setToggle] = useState(true);
+    const [toggle, setToggle] = useState(false);
 
     const columns = [
         {
