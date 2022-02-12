@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SidebarBtn.scss";
 
-const SidebarBtn = ({ toggle, setToggle }) => {
+const SidebarBtn = ({ modal, setModal }) => {
     // const [toggle, setToggle] = useState(false);
 
     return (
         <div
-            onClick={() => setToggle((p) => !p)}
-            className={`sidebar__btn ${toggle ? "toggle" : ""}`}
+            onClick={() => setModal(!modal)}
+            className={`sidebar__btn ${modal ? "toggle" : ""}`}
         >
             <div className="hamburger">
                 <span></span>

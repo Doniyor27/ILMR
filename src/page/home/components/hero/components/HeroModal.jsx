@@ -7,9 +7,7 @@ import SidebarSocials from "./SidebarSocials";
 import Sidebar from "./Sidebar";
 import "./Sidebar.scss";
 
-const HeroModal = () => {
-    const [toggle, setToggle] = useState(false);
-
+const HeroModal = ({ modal, setModal }) => {
     const columns = [
         {
             id: 1,
@@ -245,37 +243,39 @@ const HeroModal = () => {
     ];
 
     return (
-        <div className={`modal container ${toggle ? "visible" : ""}`}>
-            <div className="modal__sidebar">
-                <SidebarBtn toggle={toggle} setToggle={setToggle} />
-                <SidebarEye />
-                <SidebarLanguage />
-                <SidebarSocials />
-            </div>
-            <div className="modal__inner">
-                <div className="modal__columns">
-                    {columns.map((item) => {
-                        const { id, title, texts } = item;
-                        return (
-                            <div className="modal-column" key={id}>
-                                <div className="modal-column__title">
-                                    {title}
+        <>
+            <div className={`modal container ${modal ? "visible" : ""}`}>
+                <div className="modal__sidebar">
+                    <SidebarBtn {...{ modal, setModal }} />
+                    <SidebarEye />
+                    <SidebarLanguage />
+                    <SidebarSocials />
+                </div>
+                <div className="modal__inner">
+                    <div className="modal__columns">
+                        {columns.map((item) => {
+                            const { id, title, texts } = item;
+                            return (
+                                <div className="modal-column" key={id}>
+                                    <div className="modal-column__title">
+                                        {title}
+                                    </div>
+                                    {texts.map(({ id, text, url }) => (
+                                        <a
+                                            href={url}
+                                            className="modal-column__link"
+                                            key={id}
+                                        >
+                                            {text}
+                                        </a>
+                                    ))}
                                 </div>
-                                {texts.map(({ id, text, url }) => (
-                                    <a
-                                        href={url}
-                                        className="modal-column__link"
-                                        key={id}
-                                    >
-                                        {text}
-                                    </a>
-                                ))}
-                            </div>
-                        );
-                    })}
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

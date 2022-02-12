@@ -28,7 +28,6 @@ const Connect = () => {
         },
     ];
 
-    console.log(infoData);
     return (
         <div className="connect ">
             <div className="container">
