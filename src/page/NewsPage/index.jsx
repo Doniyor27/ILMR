@@ -75,7 +75,7 @@ export default function NewsPage() {
       <div className="newsPage container">
         <div className="newsPage__inner">
           {newsPageData.map((item, id) => (
-            <div className="newsPage__box" key={id}>
+            <Link className="newsPage__box" key={id}>
               <div className="newsPage__box__hidden">
                 <div className="newsPage__box__img">
                   <img src={item.img} alt="" />
@@ -90,7 +90,7 @@ export default function NewsPage() {
                   <p>{item.time}</p>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div className="newsPage__button">

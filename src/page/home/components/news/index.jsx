@@ -6,6 +6,7 @@ import NewsImgRight1 from "../../../../assets/images/news_img_right1.png";
 import NewsImgRight2 from "../../../../assets/images/news_img_right2.png";
 import NewsImgRight3 from "../../../../assets/images/news_img_right3.png";
 import NewsHeader from "../../../../components/newsHeader";
+import { Link } from "react-router-dom";
 
 export default function News() {
   const newsImgData = [
@@ -60,7 +61,7 @@ export default function News() {
         </div>
         <div className="news__box">
           {newsImgData.slice(1, 4).map((item, id) => (
-            <div className="news__right" key={id}>
+            <Link className="news__right" key={id}>
               <div className="news__card__box">
                 <h4>{item.country}</h4>
                 <div className="news__card__inner">
@@ -72,7 +73,7 @@ export default function News() {
                 </div>
                 <p>{item.time}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
