@@ -1,3 +1,33 @@
+@keyframes bellshake {
+    0% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(5deg);
+    }
+    30% {
+        transform: rotate(-5deg);
+    }
+    45% {
+        transform: rotate(4deg);
+    }
+    60% {
+        transform: rotate(-4deg);
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+    85% {
+        transform: rotate(-2deg);
+    }
+    92% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
 .connect {
     &__inner {
         padding: 53px 0 130px;
@@ -51,6 +81,13 @@
             align-items: center;
             gap: 24px;
             box-shadow: 20px 20px 114px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            &:hover {
+                .connect__left-icon {
+                    animation: bellshake 0.5s
+                        cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+                }
+            }
         }
 
         &-icon {
@@ -60,45 +97,11 @@
             padding: 18px;
             border-radius: 50px;
             cursor: pointer;
-            &:hover {
-                animation: bellshake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97)
-                    both;
-                transform: scale(1.5);
-            }
+
             @media (max-width: 567px) {
                 width: 50px;
                 height: 50px;
                 padding: 13.5px;
-            }
-
-            @keyframes bellshake {
-                0% {
-                    transform: rotate(0);
-                }
-                15% {
-                    transform: rotate(5deg);
-                }
-                30% {
-                    transform: rotate(-5deg);
-                }
-                45% {
-                    transform: rotate(4deg);
-                }
-                60% {
-                    transform: rotate(-4deg);
-                }
-                75% {
-                    transform: rotate(2deg);
-                }
-                85% {
-                    transform: rotate(-2deg);
-                }
-                92% {
-                    transform: rotate(1deg);
-                }
-                100% {
-                    transform: rotate(0);
-                }
             }
         }
 
