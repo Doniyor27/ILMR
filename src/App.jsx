@@ -15,13 +15,13 @@ import Regulation from "./page/regulation";
 import Structure from "./page/structure";
 import Vacancy from "./page/vacancy";
 import PhotoGallery from "./page/photoGallery";
-import Connection from './page/connection'
+import Connection from "./page/connection";
 
 function App() {
-    const { pathname } = useLocation();
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [pathname]);
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <>
@@ -33,7 +33,7 @@ function App() {
         <Route path="/books" component={Books} />
         <Route path="/devskills" component={DevSkills} />
         <Route path="/news" component={NewsPage} />
-        <Route path="/about" component={NewsAbout} />
+        <Route path="/ab  out" component={NewsAbout} />
         <Route path="/leadership" component={LeaderShip} />
         <Route path="/mediatekaOne" component={MediatekaOne} />
         <Route path="/bukletlar" component={Bukletlar} />
