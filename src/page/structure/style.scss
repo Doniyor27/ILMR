@@ -1,9 +1,10 @@
 .structure {
-  margin: 100px auto;
+  // margin: 100px auto;
   &__inner {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 126px !important;
     .structure__file {
       gap: 22px;
       display: grid;

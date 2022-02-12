@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Route, Switch, useLocation } from "react-router-dom";
-import NewsPage from "./page/NewsPage/index";
+import NewsPage from "./page/NewsPage";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Home from "./page/home";
@@ -13,6 +13,8 @@ import MediatekaOne from "./page/mediatekaOne";
 import Bukletlar from "./page/bukletlar";
 import Regulation from "./page/regulation";
 import Structure from "./page/structure";
+import Vacancy from "./page/vacancy";
+// import Contact from './page/'
 
 function App() {
   const { pathname } = useLocation();
@@ -30,12 +32,13 @@ function App() {
         <Route path="/books" component={Books} />
         <Route path="/devskills" component={DevSkills} />
         <Route path="/news" component={NewsPage} />
-        <Route path="/news/about" component={NewsAbout} />
+        <Route path="/about" component={NewsAbout} />
         <Route path="/leadership" component={LeaderShip} />
         <Route path="/mediatekaOne" component={MediatekaOne} />
         <Route path="/bukletlar" component={Bukletlar} />
         <Route path="/regulation" component={Regulation} />
         <Route path="/structure" component={Structure} />
+        <Route path="/vacancy" component={Vacancy} />
       </Switch>
       <Footer />
     </>
