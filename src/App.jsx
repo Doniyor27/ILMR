@@ -11,6 +11,7 @@ import DevSkills from "./page/developmentSkills";
 import Projects from "./page/projects";
 import MediatekaOne from "./page/mediatekaOne";
 import PhotoGallery from "./page/photoGallery";
+import Connection from "./page/connection";
 
 function App() {
     const { pathname } = useLocation();
@@ -33,6 +34,7 @@ function App() {
                 <Route path="/leadership" component={LeaderShip} />
                 <Route path="/mediatekaOne" component={MediatekaOne} />
                 <Route path="/photoGallery" component={PhotoGallery} />
+                <Route path="/connection" component={Connection} />
             </Switch>
             <Footer />
         </>
