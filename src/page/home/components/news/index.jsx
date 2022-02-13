@@ -15,6 +15,7 @@ export default function News() {
       description:
         "“Ishga marhamat” monomarkazlarida turkiyalik mutaxassislar faoliyat olib bormoqda",
       time: "Mart 01.2021",
+      path: "#",
     },
 
     {
@@ -24,6 +25,7 @@ export default function News() {
         "Bir nafar o‘zbekistonlikka o‘rtacha necha dona naqd pul to‘g‘ri keladi? So‘m banknotlarini ishlab chiqarish qanchaga tushyapti?",
       time: "Mart 01.2021",
       img: NewsImgRight1,
+      path: "#",
     },
     {
       id: 3,
@@ -32,6 +34,7 @@ export default function News() {
         "Reforms.uz platformasi orqali mamlakatimizning har bir fuqarosi o‘zini qiziqtiruvchi ",
       time: "Mart 01.2021",
       img: NewsImgRight2,
+      path: "#",
     },
     {
       id: 4,
@@ -39,6 +42,7 @@ export default function News() {
       description: "Tomsk fojiasiga 2 yil: dahshatli tunning so‘nmagan olovi",
       time: "Mart 01.2021",
       img: NewsImgRight3,
+      path: "#",
     },
   ];
 
@@ -48,19 +52,21 @@ export default function News() {
       <div className="news__inner">
         <div className="news__box">
           {newsImgData.slice(0, 1).map((item, id) => (
-            <div className="news__box__left" key={id}>
-              <img src={item.img} alt="" />
-              <div className="news__box__left-background"></div>
-              <div className="news__box__left__p">
-                <p>{item.description}</p>
-                <p>{item.time}</p>
+            <Link to={item.path} key={id}>
+              <div className="news__box__left">
+                <img src={item.img} alt="" />
+                <div className="news__box__left-background"></div>
+                <div className="news__box__left__p">
+                  <p>{item.description}</p>
+                  <p>{item.time}</p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div className="news__box">
           {newsImgData.slice(1, 4).map((item, id) => (
-            <Link className="news__right" key={id}>
+            <Link to={item.path} className="news__right" key={id}>
               <div className="news__card__box">
                 <h4>{item.country}</h4>
                 <div className="news__card__inner">

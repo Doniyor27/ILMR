@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import MediatekaOneTopPlay from "../../assets/images/icons/mediatekaOneTop.svg";
 export default function MediatekaTop({ mediaData }) {
   return (
     <div className="mediatekaTop__inner">
       {mediaData.slice(0, 2).map((item, id) => (
-        <div className="mediatekaTop__card" key={id}>
+        <Link to={item.path} className="mediatekaTop__card" key={id}>
           <div className="mediatekaTop__img">
             <div className="mediatekaTop__background">
               <img src={item.img} alt="" />
@@ -17,7 +18,7 @@ export default function MediatekaTop({ mediaData }) {
               <span>{item.time}</span>
             </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

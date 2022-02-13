@@ -5,8 +5,8 @@ import NewsPageImg1 from "../../assets/images/newsPageImg1.png";
 import NewsPageImg2 from "../../assets/images/newsPageImg2.png";
 import NewsPageImg3 from "../../assets/images/newsPageImg3.png";
 import RightArrow from "../../assets/images/icons/right-arrow.svg";
-import Hero from '../../components/hero2'
-import {heroData2} from '../../components/heroData'
+import Hero from "../../components/hero2";
+import { heroData2 } from "../../components/heroData";
 import "./style.scss";
 
 export default function NewsPage() {
@@ -17,6 +17,7 @@ export default function NewsPage() {
       desc: "Avariyalarning ildizi bilimsizlikda – Haydovchilik guvohnomasi qanday olinsa jamiyat uchun xavfsiz bo‘ladi?",
       time: "March 01, 2021",
       img: NewsPageImg1,
+      path: "#",
     },
     {
       id: 2,
@@ -24,6 +25,7 @@ export default function NewsPage() {
       desc: "UzAuto Motors’ga savol: Avtomagnitolasiz «Cobalt»ni texnik soz deb atash mumkinmi?",
       time: "March 01, 2021",
       img: NewsPageImg2,
+      path: "#",
     },
     {
       id: 3,
@@ -31,6 +33,7 @@ export default function NewsPage() {
       desc: "Mudofaa sohasida zamonaviy tahdidlarni inobatga olgan holda yangi dastur qabul qilinadi",
       time: "March 01, 2021",
       img: NewsPageImg3,
+      path: "#",
     },
     {
       id: 4,
@@ -38,6 +41,7 @@ export default function NewsPage() {
       desc: "Avariyalarning ildizi bilimsizlikda – Haydovchilik guvohnomasi qanday olinsa jamiyat uchun xavfsiz bo‘ladi?",
       time: "March 01, 2021",
       img: NewsPageImg1,
+      path: "#",
     },
     {
       id: 5,
@@ -45,6 +49,7 @@ export default function NewsPage() {
       desc: "Avariyalarning ildizi bilimsizlikda – Haydovchilik guvohnomasi qanday olinsa jamiyat uchun xavfsiz bo‘ladi?",
       time: "March 01, 2021",
       img: NewsPageImg1,
+      path: "#",
     },
     {
       id: 6,
@@ -52,6 +57,7 @@ export default function NewsPage() {
       desc: "Avariyalarning ildizi bilimsizlikda – Haydovchilik guvohnomasi qanday olinsa jamiyat uchun xavfsiz bo‘ladi?",
       time: "March 01, 2021",
       img: NewsPageImg2,
+      path: "#",
     },
     {
       id: 7,
@@ -59,6 +65,7 @@ export default function NewsPage() {
       desc: "Avariyalarning ildizi bilimsizlikda – Haydovchilik guvohnomasi qanday olinsa jamiyat uchun xavfsiz bo‘ladi?",
       time: "March 01, 2021",
       img: NewsPageImg3,
+      path: "#",
     },
     {
       id: 8,
@@ -66,17 +73,18 @@ export default function NewsPage() {
       desc: "Avariyalarning ildizi bilimsizlikda – Haydovchilik guvohnomasi qanday olinsa jamiyat uchun xavfsiz bo‘ladi?",
       time: "March 01, 2021",
       img: NewsPageImg1,
+      path: "#",
     },
   ];
 
   return (
     <>
-    <Hero data={heroData2} index={2}/>
+      <Hero data={heroData2} index={2} />
       <News />
       <div className="newsPage container">
         <div className="newsPage__inner">
           {newsPageData.map((item, id) => (
-            <Link className="newsPage__box" key={id}>
+            <Link to={item.path} className="newsPage__box" key={id}>
               <div className="newsPage__box__hidden">
                 <div className="newsPage__box__img">
                   <img src={item.img} alt="" />
@@ -95,7 +103,7 @@ export default function NewsPage() {
           ))}
         </div>
         <div className="newsPage__button">
-          <Link to="/news/about" className="btn">
+          <Link to="/" className="btn">
             <span>Ko'proq ko'rish</span>
             <img src={RightArrow} alt="" />
           </Link>

@@ -9,7 +9,7 @@ import NewsAbout from "./page/NewsAbout";
 import Books from "./page/Books";
 import DevSkills from "./page/developmentSkills";
 import Projects from "./page/projects";
-import MediatekaOne from "./page/mediatekaOne";
+import VideoGallery from "./page/videoGallery";
 import Bukletlar from "./page/bukletlar";
 import Regulation from "./page/regulation";
 import Structure from "./page/structure";
@@ -35,7 +35,7 @@ function App() {
         <Route path="/news" component={NewsPage} />
         <Route path="/about" component={NewsAbout} />
         <Route path="/leadership" component={LeaderShip} />
-        <Route path="/mediatekaOne" component={MediatekaOne} />
+        <Route path="/videoGallery" component={VideoGallery} />
         <Route path="/bukletlar" component={Bukletlar} />
         <Route path="/regulation" component={Regulation} />
         <Route path="/structure" component={Structure} />

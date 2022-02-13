@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import LaboratoryImg1 from "../../../../assets/images/laboratory_left_img1.png";
 import LaboratoryImgRight1 from "../../../../assets/images/laboratory_right_img1.png";
 import LaboratoryImgRight2 from "../../../../assets/images/laboratory_right_img2.png";
@@ -9,16 +10,19 @@ export default function Laboratory() {
       id: 1,
       text: "Mehnatni muhofaza qilish boʼyicha markaziy laboratoriya",
       img: LaboratoryImgRight1,
+      path: "#",
     },
     {
       id: 2,
       text: "Shaxsiy himoya vositalarini sertifikatlashtirish",
       img: LaboratoryImg1,
+      path: "#",
     },
     {
       id: 3,
       text: "Mehnat gigienasi laboratoriyasi",
       img: LaboratoryImgRight2,
+      path: "#",
     },
   ];
 
@@ -43,15 +47,17 @@ export default function Laboratory() {
             </p>
           </div>
         </div>
-        {laboratoryData.map(({ id, img, text }) => (
-          <div className="laboratory__box" key={id}>
-            <div className="laboratory__image">
-              <img src={img} alt="" className={`laboratory__img${id}`} />
+        {laboratoryData.map(({ path, id, img, text }) => (
+          <Link to={path} key={id}>
+            <div className="laboratory__box">
+              <div className="laboratory__image">
+                <img src={img} alt="" className={`laboratory__img${id}`} />
 
-              <div className={`laboratory__background${id}`}></div>
-              <p>{text?.length < 80 ? text : text.slice(0, 80) + "..."}</p>
+                <div className={`laboratory__background${id}`}></div>
+                <p>{text?.length < 80 ? text : text.slice(0, 80) + "..."}</p>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

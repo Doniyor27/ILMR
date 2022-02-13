@@ -18,6 +18,7 @@ export default function MediatekaOne() {
         "“Ishga marhamat” monomarkazlarida turkiyalik mutaxassislar faoliyat olib bormoqda",
       time: "Mart 01, 2021 ",
       img: MediatekaOneTop1,
+      path: "#",
     },
     {
       id: 2,
@@ -25,30 +26,35 @@ export default function MediatekaOne() {
         "“Ishga marhamat” monomarkazlarida turkiyalik mutaxassislar faoliyat olib bormoqda",
       time: "Mart 01, 2021 ",
       img: MediatekaOneTop2,
+      path: "#",
     },
     {
       id: 3,
       country: "O’zbekiston yangiliklari",
       desc: "Asosiy hamkorlar, oltini tashqi savdosi",
       img: MediatekaOneBottom1,
+      path: "#",
     },
     {
       id: 4,
       country: "Jaxon yangiliklari",
       desc: "Asosiy hamkorlar, oltin va mashinalar - O‘zbekistonning 2021 yilgi tashqi savdosi",
       img: MediatekaOneBottom2,
+      path: "#",
     },
     {
       id: 5,
       country: "Anons",
       desc: "Asosiy hamkorlar, oltin va mashinalar - O‘zbekistonning 2021 yilgi tashqi savdosi",
       img: MediatekaOneBottom3,
+      path: "#",
     },
     {
       id: 6,
       country: "E’lon",
       desc: "Asosiy hamkorlar, oltin va mashinalar - O‘zbekistonning 2021 yilgi tashqi savdosi",
       img: MediatekaOneBottom4,
+      path: "#",
     },
   ];
   const [mediaData, setMediaData] = useState(mediatekaOneData);

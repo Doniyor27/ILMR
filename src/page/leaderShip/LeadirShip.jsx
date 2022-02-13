@@ -10,25 +10,25 @@ export default function LeaderShip({ item }) {
       <div className="contact__card__box">
         <div className="contact__card__img__style">
           <div className="contact__card__img">
-            <img src={item.img} alt="" />
+            <img src={item.img} alt="photo" />
           </div>
         </div>
 
         <div className="contact__card__info">
           <h3>{item.title}</h3>
           <p>
-            <img src={ContactIcon} alt="" />
+            <img src={ContactIcon} alt="photo" />
             {item.name}
           </p>
           <p>
-            <img src={PhoneIcon} alt="" />
+            <img src={PhoneIcon} alt="photo" />
             {item.phone}
           </p>
           <p>
-            <img src={EmailIcon} alt="" /> {item.email}
+            <img src={EmailIcon} alt="photo" /> {item.email}
           </p>
           <p>
-            <img src={LocationIcon} alt="" /> {item.location}
+            <img src={LocationIcon} alt="photo" /> {item.location}
           </p>
         </div>
       </div>
@@ -45,7 +45,7 @@ export default function LeaderShip({ item }) {
             <p>
               {item.accardion[0].desc}
               <div className="contact__accardion__opacity">
-                <a href="">Batafsil</a>
+                <a href="/">Batafsil</a>
               </div>
             </p>
           </div>
