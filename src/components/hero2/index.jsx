@@ -5,9 +5,10 @@ import SidebarBtn from "../../components/SidebarBtn";
 import SidebarEye from "../../components/SidebarEye";
 import SidebarLanguage from "../../components/SidebarLanguage";
 import logo from "../../assets/images/logo.svg";
+import HeroModal from "../../page/home/components/hero/components/HeroModal";
 
 const Hero2 = ({ data, index }) => {
-    const [toggle, setToggle] = useState(false);
+    const [modal, setModal] = useState(false);
     return (
         <div className="hero2">
             <div className="hero2__inner">
@@ -18,11 +19,11 @@ const Hero2 = ({ data, index }) => {
                     {data.texts.slice(index - 1, index).map(({ text, url }) => (
                         <div className="hero2__sections">
                             <div className="hero2__sidebar">
-                                <SidebarBtn />
-                                {/* {...{ toggle, setToggle }} */}
+                                <SidebarBtn {...{ modal, setModal }} />
                                 <SidebarEye />
                                 <SidebarLanguage />
                             </div>
+                            <HeroModal {...{ modal, setModal }} />
 
                             <div className="hero2__content">
                                 <div className="hero2__logo">

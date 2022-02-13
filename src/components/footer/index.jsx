@@ -76,12 +76,12 @@ const Footer = () => {
                 },
                 {
                     id: 2,
-                    text: "Uy xoʼjaliklarini bandlik masalalari boʼyicha oʼrganish va boshqa dala tadqiqotlarini tashkil qilish guruhi",
+                    text: "Uy xo'jaliklarini bandlik masalalari bo'yicha o'rganish va boshqa dala tadqiqotlarini tashkil qilish guruhi",
                     url: "#",
                 },
                 {
                     id: 3,
-                    text: "Mehnatni muhofaza qilish boʼyicha markaziy laboratoriya",
+                    text: "Mehnatni muhofaza qilish bo'yicha markaziy laboratoriya",
                     url: "#",
                 },
                 {
