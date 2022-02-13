@@ -39,10 +39,10 @@ const Hero = () => {
 
     return (
         <div className="hero">
+            <HeroModal {...{ modal, setModal }} />
             <div className="hero-container">
                 <div className="sidebar">
                     <Sidebar {...{ modal, setModal }} />
-                    <HeroModal {...{ modal, setModal }} />
                 </div>
 
                 <div className="hero__logo">

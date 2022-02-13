@@ -244,7 +244,7 @@ const HeroModal = ({ modal, setModal }) => {
 
     return (
         <>
-            <div className={`modal container ${modal ? "visible" : ""}`}>
+            <div className={`modal modal-container ${modal ? "visible" : ""}`}>
                 <div className="modal__sidebar">
                     <SidebarBtn {...{ modal, setModal }} />
                     <SidebarEye />
