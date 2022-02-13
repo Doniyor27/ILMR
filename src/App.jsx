@@ -33,7 +33,7 @@ function App() {
         <Route path="/books" component={Books} />
         <Route path="/devskills" component={DevSkills} />
         <Route path="/news" component={NewsPage} />
-        <Route path="/ab  out" component={NewsAbout} />
+        <Route path="/about" component={NewsAbout} />
         <Route path="/leadership" component={LeaderShip} />
         <Route path="/mediatekaOne" component={MediatekaOne} />
         <Route path="/bukletlar" component={Bukletlar} />
