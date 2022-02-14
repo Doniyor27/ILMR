@@ -123,9 +123,10 @@ const Connect = () => {
                     </div>
 
                     <div className="connect__map">
+                        {/* eslint-disable */}
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23958.90333325021!2d69.29284562848773!3d41.35533323676051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef35cf20159d9%3A0x66e8bbcc60111a1b!2sOKS%20TECHNOLOGIES%20(oks.uz)!5e0!3m2!1sru!2s!4v1644580483445!5m2!1sru!2s"
-                            allowfullscreen=""
+                            allowFullScreen=""
                             loading="lazy"
                             style={{ border: 0 }}
                         ></iframe>

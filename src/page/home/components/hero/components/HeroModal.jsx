@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./HeroModal.scss";
 import SidebarBtn from "../../../../../components/SidebarBtn";
 import SidebarEye from "../../../../../components/SidebarEye";
 import SidebarLanguage from "../../../../../components/SidebarLanguage";
 import SidebarSocials from "./SidebarSocials";
-import Sidebar from "./Sidebar";
 import "./Sidebar.scss";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const HeroModal = ({ modal, setModal }) => {
     const columns = [
@@ -157,7 +157,7 @@ const HeroModal = ({ modal, setModal }) => {
                 },
                 {
                     id: 11,
-                    text: "E’lonlar",
+                    text: "E'lonlar",
                     url: "#",
                 },
                 {
@@ -166,8 +166,8 @@ const HeroModal = ({ modal, setModal }) => {
                     url: "#",
                 },
                 {
-                    id: 12,
-                    text: "Ko’p so’raladigan savollar",
+                    id: 13,
+                    text: "Ko'p so'raladigan savollar",
                     url: "#",
                 },
             ],
@@ -261,13 +261,20 @@ const HeroModal = ({ modal, setModal }) => {
                                         {title}
                                     </div>
                                     {texts.map(({ id, text, url }) => (
-                                        <a
-                                            href={url}
-                                            className="modal-column__link"
+                                        // <a
+                                        //     href={url}
+                                        //     className="modal-column__link"
+                                        //     key={id}
+                                        // >
+                                        //     {text}
+                                        // </a>
+                                        <Link
                                             key={id}
+                                            className="modal-column__link"
+                                            to={url}
                                         >
                                             {text}
-                                        </a>
+                                        </Link>
                                     ))}
                                 </div>
                             );

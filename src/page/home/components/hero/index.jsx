@@ -8,7 +8,6 @@ import Sidebar from "./components/Sidebar";
 import HeroModal from "./components/HeroModal";
 
 const Hero = () => {
-    const [eyeToggle, setEyeToggle] = useState(false);
     const [modal, setModal] = useState(false);
     const sections = [
         {
