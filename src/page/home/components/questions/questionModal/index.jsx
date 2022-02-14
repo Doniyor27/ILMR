@@ -13,11 +13,14 @@ export default function QuestionModal({ active, setActive }) {
 
   return (
     <div
-      className={active ? "modal active" : "modal"}
+      className={active ? "questionModal active" : "questionModal"}
       onClick={() => setActive(false)}
     >
-      <div className="modal__content" onClick={e => e.stopPropagation()}>
-        <p className="modal_close" onClick={() => setActive(false)}>
+      <div
+        className="question__modal__content"
+        onClick={e => e.stopPropagation()}
+      >
+        <p className="question__modal_close" onClick={() => setActive(false)}>
           x
         </p>
         {idItems.map(item => (

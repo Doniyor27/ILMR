@@ -9,7 +9,6 @@ const Connection = () => {
     <div>
       <Hero2 data={heroData2} index={3} />
       <Connect />
-      {/* <Footer /> */}
     </div>
   );
 };
